@@ -16,7 +16,6 @@
 
 	/* Center and scale the image nicely */
 	background-repeat: no-repeat;
-	background-size: contain;
 
 	/* Needed to position the navbar */
 	position: relative;
@@ -25,69 +24,69 @@
 /* Navigation top bar */
 nav {
 	margin-bottom: -10px;
-  background: #222;
-  padding: 5px 20px;
+	background: #222;
+	padding: 5px 20px;
 }
 
 ul {
-  list-style-type: none;
+	list-style-type: none;
 }
 a {
-  color: white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 a:hover {
 	color: goldenrod;
-  text-decoration: none;
+	text-decoration: none;
 }
 .logo a:hover {
 	color: goldenrod;
-  text-decoration: none;
+	text-decoration: none;
 }
 .menu li {
-  font-size: 16px;
-  padding: 15px 5px;
-  white-space: nowrap;
+	font-size: 16px;
+	padding: 15px 5px;
+	white-space: nowrap;
 }
 .logo a,
 .toggle a {
 	color: goldenrod;
-  font-size: 20px;
+	font-size: 20px;
 }
 
 /* Mobile menu */
 .menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 .toggle {
-  order: 1;
+	order: 1;
 }
 .item {
-  width: 100%;
-  text-align: center;
-  order: 3;
-  display: none;
+	width: 100%;
+	text-align: center;
+	order: 3;
+	display: none;
 }
 .item.active {
-  display: block;
+	display: block;
 }
 /* Tablet menu */
 @media all and (min-width: 600px) {
-  .menu {
-    justify-content: center;
-  }
-  .logo {
-    flex: 1;
-  }
-  .toggle {
-    flex: 1;
-    text-align: right;
-  }
-  .toggle {
-    order: 2;
+	.menu {
+		justify-content: center;
+	}
+	.logo {
+		flex: 1;
+	}
+	.toggle {
+		flex: 1;
+		text-align: right;
+	}
+	.toggle {
+		order: 2;
 	}
 	.toggle a {
 		color: goldenrod;
@@ -100,20 +99,114 @@ a:hover {
 }
 /* Desktop menu */
 @media all and (min-width: 900px) {
-  .item {
-    display: block;
-    width: auto;
-  }
-  .toggle {
-    display: none;
-  }
-  .logo {
-    order: 0;
-  }
-  .item {
-    order: 1;
-  }
-  .menu li {
-    padding: 15px 10px;
-  }
+	.item {
+		display: block;
+		width: auto;
+	}
+	.toggle {
+		display: none;
+	}
+	.logo {
+		order: 0;
+	}
+	.item {
+		order: 1;
+	}
+	.menu li {
+		padding: 15px 10px;
+	}
 }
+
+
+.crates {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.crates h1{
+	text-align: center;
+}
+
+
+
+.crateChild {
+	width: 50%;
+	height: 50%;
+	margin: auto;
+}
+
+
+#lab_social_icon_footer {
+	padding: 40px 0;
+	background-color: #222;
+}
+
+#lab_social_icon_footer a {
+	color: #888888;
+}
+
+#lab_social_icon_footer .social:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+	-webkit-transform: scale(0.8);
+	/* Browser Variations: */
+
+	-moz-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon_footer #social-fb:hover {
+	color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+	color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+	color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+	color: #f39c12;
+}
+
+
+#lightSlider img {
+	height: 50%;
+	width: 95%;
+}
+
+footer{
+	color: goldenrod;
+}
+
+.button {
+	background-color: #888888;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.gold:hover {
+	background-color: goldenrod;
+}
+
+.red:hover {
+	background-color: red;
+}
+
+

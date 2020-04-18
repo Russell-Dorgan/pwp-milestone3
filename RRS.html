@@ -21,6 +21,12 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="stylesheet.css">
 
+
+	<link type="text/css" rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css"/>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.js"></script>
+
 </head>
 
 <body>
@@ -47,18 +53,18 @@
 			</li>
 		</ul>
 		<script>
-		$(function() {
-			$(".toggle").on("click", function() {
-					if ($(".item").hasClass("active")) {
-							$(".item").removeClass("active");
-							$(this).find("a").html("<i class='fas fa-bars'></i>");
+			$(function() {
+				$(".toggle").on("click", function() {
+					if($(".item").hasClass("active")) {
+						$(".item").removeClass("active");
+						$(this).find("a").html("<i class='fas fa-bars'></i>");
 					} else {
-							$(".item").addClass("active");
-							$(this).find("a").html("<i class='fas fa-times'></i>");
+						$(".item").addClass("active");
+						$(this).find("a").html("<i class='fas fa-times'></i>");
 					}
+				});
 			});
-		});
-	</script>
+		</script>
 	</nav>
 	<!-- Display the countdown timer in an element -->
 	<div class="countdown">
@@ -307,102 +313,87 @@
 			</div>
 		</div>
 	</section>
-
-
-	<html>
-	<head>
-
-	<body>
-	<section>
-		<div class="container">
-			<a name="galleryShow"></a>
-			<h2 align="center">GALLERY</h2>
-			<div class="gallery">
-				<a target="_blank" href="images/GALLERY1.jpg">
-					<img src="images/GALLERY1.jpg" alt="GALLERY1" width="1008" height="756">
-				</a>
-			</div>
-
-			<div class="row">
-				<div class="column">
-					<a target="_blank" href="images/GALLERY2.jpg">
-						<img src="images/GALLERY2.jpg" alt="" width="456" height="608">
-					</a>
-
-				</div>
-
-				<div class="gallery">
-					<a target="_blank" href="images/GALLERY3.jpg">
-						<img src="images/GALLERY3.jpg" alt="" width="456" height="608">
-					</a>
-
-				</div>
-
-				<div class="gallery">
-					<a target="_blank" href="images/GALLERY4.jpg">
-						<img src="images/GALLERY4.jpg" alt="" width="456" height="608">
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	</body>
-	</html>
 </div>
-</body>
-</html>
 
-<!--		<div class="row">-->
-<!--			<div class="column">-->
-<!--				<img src="images/GALLERY2.jpg" alt="GALLERY2">-->
-<!--			</div>-->
-<!--			<div class="column">-->
-<!--				<img src="images/GALLERY3.jpg" alt="GALLERY3">-->
-<!--			</div>-->
-<!--			<div class="column">-->
-<!--				<img src="images/GALLERY4.jpg" alt="GALLERY4">-->
-<!--			</div>-->
-<!--		</div>-->
+<div class="releases">
+	<h1 align="center">GALLERY</h1>
+</div>
 
-<!--		<div class="gallery">-->
-<!--			<a target="_blank" href="images/GALLERY2.jpg">-->
-<!--				<img src="images/GALLERY2.jpg" alt="GALLERY3" width="624" height="1032">-->
-<!--			</a>-->
-<!--		</div>-->
+<section class="crates">
+	<div class="crateChild">
+		<img src="images/GALLERY1.jpg" alt="GALLERY1">
+	</div>
+</section>
 
-<!--		<div class="gallery">-->
-<!--			<a target="_blank" href="images/GALLERY3.jpg">-->
-<!--				<img src="images/GALLERY3.jpg" alt="GALLERY3" width="624" height="1032">-->
-<!--			</a>-->
-<!--		</div>-->
-
-<!--		<div class="gallery">-->
-<!--			<a target="_blank" href="images/GALLERY4.jpg">-->
-<!--				<img src="images/GALLERY4.jpg" alt="GALLERY4" width="624" height="1032">-->
-<!--			</a>-->
-<!--		</div>-->
+<ul id="lightSlider">
+	<li>
+		<img src="images/GALLERY2.jpg" alt>
+	</li>
+	<li>
+		<img src="images/GALLERY3.jpg" alt>
+	</li>
+	<li>
+		<img src="images/GALLERY4.jpg" alt>
+	</li>
 
 
+</ul>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#lightSlider").lightSlider({
+			auto: true,
+			loop: true,
+			item: 3,
+			slideMove: 1, // slidemove will be 1 if loop is true
+			slideMargin: 10,
+			mode: "slide",
+			cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+			easing: 'linear', //'for jquery animation',////
+			speed: 400, //ms'
+			slideEndAnimation: true,
+			rtl: false,
+			adaptiveHeight: false,
+			gallery: false,
+			galleryMargin: 5,
+			thumbMargin: 5,
+
+		});
+	});
+</script>
 <footer class="text-center py-4">
-	<div class="container">
+		<section id="lab_social_icon_footer">
+			<!-- Include Font Awesome Stylesheet in Header -->
+			<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+			<div class="container">
+				<div class="text-center center-block">
+					<a href="https://www.facebook.com/bootsnipp"><i id="social-fb"
+																					class="fa fa-facebook-square fa-3x social"></i></a>
+					<a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+					<a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp"
+																						  class="fa fa-google-plus-square fa-3x social"></i></a>
+					<a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+				</div>
 
-	</div>
+			</div>
+			<div class="container">
+				<a name="contactUs"></a>
+				<h2>Contact Us:</h2>
 
-	<div class="container">
-		<a name="contactUs"></a>
-		<h2>Contact Us:</h2>
+				<form action="mailto:clambakedbenz@gmail.com" method="post" enctype="text/plain">
+					Name:<br>
+					<input type="text" name="name"><br>
+					E-mail:<br>
+					<input type="text" name="mail"><br>
+					Comment:<br>
+					<textarea type="text" name="comment" size="50"></textarea><br><br>
+					<input class="button gold" type="button" value="Send">
+					<input class="button red" type="button" value="Reset">
+				</form>
+			</div>
 
-		<form action="mailto:clambakedbenz@gmail.com" method="post" enctype="text/plain">
-			Name:<br>
-			<input type="text" name="name"><br>
-			E-mail:<br>
-			<input type="text" name="mail"><br>
-			Comment:<br>
-			<input type="text" name="comment" size="50"><br><br>
-			<input type="submit" value="Send">
-			<input type="reset" value="Reset">
-		</form>
-	</div>
+		</section>
+
+
 </footer>
 </div>
 
