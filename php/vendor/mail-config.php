@@ -16,7 +16,7 @@
 
 //mailgun API Key authorization
 
-$mailgunApiKey = "b50ddf1a9bc03ec40a911480fe1d8fef-f135b0f1-ed27e48d";
+$mailgunApiKey = "";
 $mailgunDomain = "https://app.mailgun.com/app/sending/domains/sandbox13a7680857cf4ca8b3d140c74d0dc26d.mailgun.org";
 
 
