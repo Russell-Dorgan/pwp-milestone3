@@ -28,11 +28,11 @@ $(document).ready(function(){
 			name: {
 				required: true
 			},
-			email: {
+			mail: {
 				email: true,
 				required: true
 			},
-			message: {
+			comment: {
 				required: true,
 				maxlength: 2000
 			}
@@ -43,11 +43,11 @@ $(document).ready(function(){
 			name: {
 				required: "Please enter your name."
 			},
-			email: {
+			mail: {
 				email: "Please enter a valid email address.",
 				required: "Please enter a valid email address."
 			},
-			message: {
+			comment: {
 				required: "Please enter a message.",
 				maxlength: "2000 characters max."
 			}
