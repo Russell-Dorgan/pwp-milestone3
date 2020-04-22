@@ -22,7 +22,7 @@ use ReCaptcha\ReCaptcha;
 // verify user's reCAPTCHA input
 $recaptcha = new ReCaptcha($secret);
 $resp = $recaptcha->verify($_POST["g-recaptcha-response"], $_SERVER["REMOTE_ADDR"]);
-
+var_dump($resp);
 try {
 	//if there's a reCAPTCHA error, throw an exception
 	if (!$resp->isSuccess()) {
@@ -36,9 +36,9 @@ try {
 	 **/
 
 	$name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+	$email = filter_input(INPUT_POST, "mail", FILTER_SANITIZE_EMAIL);
 	$subject = filter_input(INPUT_POST, "subject", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	$message = filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$message = filter_input(INPUT_POST, "comment", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 
 
 
