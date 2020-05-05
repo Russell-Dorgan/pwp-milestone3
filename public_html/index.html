@@ -19,7 +19,7 @@
 
 	<title>Russell's Record Store</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
 
 
 	<link type="text/css" rel="stylesheet"
@@ -38,7 +38,7 @@
 	<script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
 	<!-- Your JavaScript Form Validator -->
-<!--	<script src="js/form-validate.js"></script>-->
+	<script src="js/form-validate.js"></script>
 
 	<!-- Google reCAPTCHA -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
@@ -130,6 +130,7 @@
 
 <div class="releases">
 	<h1 align="center">RELEASES</h1>
+	<a name="home"></a>
 </div>
 
 
@@ -338,9 +339,10 @@
 
 <div class="releases">
 	<h1 align="center">GALLERY</h1>
+	<a name="galleryShow"></a>
 </div>
 
-<a name="galleryShow"></a>
+
 
 <section class="crates">
 	<div class="crateChild">
@@ -402,17 +404,20 @@
 				<a name="contactUs"></a>
 				<h2>Contact Us:</h2>
 
-				<form id="my-contact-form" action="php/mailer.php" method="post" enctype="text/plain">
+				<form id="my-contact-form" action="../php/" method="post" enctype="text/plain">
 					Name:<br>
 					<input type="text" name="name" id="name"><br>
-					E-mail:<br>
-					<input type="text" name="subject" id="subject"><br>
 					Subject:<br>
+					<input type="text" name="subject" id="subject"><br>
+					E-Mail:<br>
 					<input type="text" name="mail" id="mail"><br>
 					Comment:<br>
 					<textarea type="text" name="comment" id="comment" size="50"></textarea><br><br>
+
 					<!-- reCAPTCHA -->
+					<div class="recaptchaCenter">
 					<div class="g-recaptcha" data-sitekey="6Ld9BOwUAAAAAC_HcYYJ7i6YvpWxUwHeOsx_rYj_"></div>
+					</div>
 
 					<button class="button gold" type="submit" value="Send">Submit</button>
 					<button class="button red" type="reset" value="Reset">Reset</button>

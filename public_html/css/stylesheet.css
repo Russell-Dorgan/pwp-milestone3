@@ -10,7 +10,7 @@
 
 .bg-img {
 	/* The image used */
-	background-image: url("images/HEADER2.jpg");
+	background-image: url("../images/HEADER2.jpg");
 	padding-bottom: 10%;
 	min-height: 380px;
 
@@ -207,6 +207,15 @@ footer{
 
 .red:hover {
 	background-color: red;
+}
+
+
+.recaptchaCenter{
+	text-align: center;
+}
+
+.g-recaptcha{
+	display: inline-block;
 }
 
 

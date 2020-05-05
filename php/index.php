@@ -22,7 +22,7 @@ use ReCaptcha\ReCaptcha;
 // verify user's reCAPTCHA input
 $recaptcha = new ReCaptcha($secret);
 $resp = $recaptcha->verify($_POST["g-recaptcha-response"], $_SERVER["REMOTE_ADDR"]);
-var_dump($resp);
+
 try {
 	//if there's a reCAPTCHA error, throw an exception
 	if (!$resp->isSuccess()) {
